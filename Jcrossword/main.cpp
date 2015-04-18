@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <tchar.h>
+
+#include <iostream>
+#include <string>
+
 #include "jcword.h"
 
 #define N	3
