@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdlib>
-#include <stdio.h>
 #include <conio.h>
 #include <time.h>
 #include "LiveModel.h"
@@ -29,13 +27,9 @@ int main(int argc, char* argv[])
 		for (int i = 0; i < FIELD_N; i++)
 		{
 			for (int j = 0; j < FIELD_M; j++)
-			{
 				printf("%i", a.GetRow(i, j));
-			}
 			std::cout << std::endl;
 		}
-
-		//_getch();
 		system("CLS");
 		a.Step();
 	}
