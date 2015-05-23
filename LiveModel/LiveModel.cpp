@@ -20,6 +20,13 @@ LiveModel::LiveModel(int x, int y)
 
 LiveModel::~LiveModel()
 {
+	for (int i = 0; i < sizeY; i++)
+	{
+		delete[] Field[i];
+		delete[] uField[i];
+	}
+	delete[] Field;
+	delete[] uField;
 }
 
 int LiveModel::Calculate(int x, int y)
